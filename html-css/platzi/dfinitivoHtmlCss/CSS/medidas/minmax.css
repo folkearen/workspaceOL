@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main  {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+section{
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    /* Lo anterior quiere decir que el contenedor ocupara el 50% del espacio
+    desde los 320 px hasta 500px pasada esas medidas dejara de crecer */
+    min-height: 300px; /* Permite que el contenedor crezca como tanto como el contenido
+    que este tenga */
+    margin: 0 auto;
+    background-color: red;
+}

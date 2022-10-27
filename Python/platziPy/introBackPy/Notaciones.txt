@@ -1,0 +1,81 @@
+CRUD (Create, Read, Update, Delete) 
+Crear eliminar actualizar y borrar, suele ser un estandar.
+
+Se le puede traer a la vida mediante un API que pueda hacer funcinar 
+CRUD y lo conecto el backend con el fronted ya puedo considerar una
+aplicacion creada.
+
+Proyecto Twitter API aplication program interface.
+en Python tenemos Fastapi, Django - rest framework, Flast
+ 
+ - Endpoint / Rpute/ Path es una seccion de la ulr del Proyecto
+ http://www.twitter.com/api/tweets, lo que esta despues del dominio sera
+o despues de API es un endpoints y se deben desarrollar.
+
+En el proyecto crearemos los endpoint que conforman el CRUD 
+
+--------------------------------------------------
+Endpoints para Tweets.
+
+/post    puedo publicar los twets     -Create    
+/tweets  puedo ver todos los tweets      -Read    
+        
+/tweets/{tweets id} (tweets particular) ver tweet particular      
+
+/tweets/{tweets id}/update para actualizar un tweet -Update
+/tweets/{tweets id}/delate par borra un tweet  -Delate tweet
+
+{} valores aleatorios que corresponden una variables y se establecen entre llaves
+en la url se les denomina parametros
+-------------------------------------------------------------------------------------
+^
+|
+Se denominan en progrmacion API y Backend como modelos, 
+en sql Tablas que contienen registro, en programacion dichos registros se les denomina
+atributos.
+|
+>
+--------------------------------------------------------------------------------------
+Endpoints para Users
+/signup   registar un usuario -Create 
+/users    ver todos los usuarios -Read
+/users/{user id}/ muestra un usuario en particular
+/users/{user id}/update para actualizar un usuario -Update
+/users/{user id}/update para borrar un usuario -Delate
+
+
+
+Cada ve que entre en un endapoin el servidor me respondera con un archivo en .json
+(que es un diccionario de Python o un objeto de Js en idioma interlenguaje JSON)
+ejemplo de .json:
+                      {
+                          'user': 121
+                          'username': "folkearen"
+                          'email': folke@aren.com
+                      }
+
+programa para backend
+
+Python con 
+            Django (grande,con muchas posibilidads)
+            Flask (sencillo, para aplicaciones ajustadas a medidas)
+            Fastapi (mas apido, a nivel de desarrollo como de desempelo, en todo el mercado)
+
+JS con
+        Express (frameworck simple)
+        Nest (escrito con complejidad pero con mas opcines) 
+
+Php con 
+        Laravel (sintaxy simple, sencillo, para comenzar)
+        Symphony (mas complejo, aplicaciones mas escalables)
+
+Java con
+        Spring ()
+
+Go con
+        Bin ()
+
+        Beego ()
+
+Ruby con 
+        Rails (flexible, rapido, gran comunidad)

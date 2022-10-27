@@ -1,0 +1,5 @@
+let candtidadHijos = +prompt("Ingresa cantidad de hijos= ")
+let nombrePareja = prompt("Ingresa el nombre de tu pareja: ")
+let localidadGeografica = prompt("Ingresa localidad geografica: ")
+let trabajo = prompt("Ingresa una trabajo: ")
+console.log(`Estaras casado con ${nombrePareja} tendras ${candtidadHijos} y viviran en ${localidadGeografica} y estara trabajando en ${trabajo}` )

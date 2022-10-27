@@ -1,0 +1,184 @@
+Paradigma Orientado a Objetos
+
+Se compone de cuatro elemntos
+        -Clases
+        Que se componen de :
+        -Propiedades
+        -Metodos
+        y juntos resultan en :
+        -Objetos
+
+Encapsulamiento
+Abstraccion
+Herencia
+Polimorfirsmo
+
+Diagramas de modelado
+        -OMT 1991 descontinuado = Object Modeling Techniques - 
+        Metodologia para el analisis orientado a objetos.
+        Modela clases y objetos
+
+        -UML 1999 vigente = Unified Modeling Lenguage
+        Lenguaje de Modelado Unificado
+        modela 
+        clase, casos de unos, objetos,actividades, iteracion, estaods, implementacion
+
+        Hacer un diagrama UML 
+
+Obejtos:
+
+           Cuando tengamos un problema los primero que debemos hacer es 
+           IDENTIFICAR OBJETOS
+
+Como hacerlo?
+
+        Siempre llevan nombre, Son sustantivos, y tienen propiedades y comportamientos
+        pueden ser fisicos (manzana, persona, apolleta --- USER, TARJETA DE BANCO) 
+        o conceptuales (SESSION, CUENTA DE BANCO)
+
+        Propiedades o Atributos - caracteristicas, seran sustantivos
+        Ej: nombre, tamano, forma, estado.
+        
+        comportamientos o metodos - funciones operaciones del Obejtos
+        Pueden ser verbos o sustantivo y verbo.
+        ej: login(), logout(), makeReport() 
+
+ej:             OBJETO          ATRIBUTOS       COMPORTAMIENTOS
+                perro           nombre          ladrar
+                                color           comper
+                                raza            dormir
+                                altura          correr
+
+        Es importante conocer el contexto de nuestros objetos
+ 
+ ej: Sistema de adopciones, catalogo de perritos para adoopcion 
+
+                OBJETO          ATRIBUTOS       COMPORTAMIENTOS
+                perro           id              serAdoptado()
+                                nombre
+                                color           
+                                raza            
+                                altura          
+
+Las CLASES
+
+        Modelo sobre el cual se construiran nuestros objetos. Es un molde que permita generar muchos mas objetos
+        Se analizan objetos, se traen sus atributos y se generan modelos llamados clases.
+
+        ABSTRACCION, cuando se abstraen los datos de un objeto para generar un molde. 
+
+
+DISENO MODULAR,  subdividir un sistema en partes mas pequenas, estsa partes se llaman modulos y funcionan de
+forma independiente. El concept proviene desde el diseno y la arquitectura, esto permite generar modulos en masa.
+
+diseno estructurada, un solo boloque y si algo se danaba arruiba todo el programa.
+en el diseno MODULAR si hay un error solo danara ese modulo. Divide y venceras.
+  
+                        Reutilizar codigo (modulos)
+                        Evitar colapsos
+                        Mantenible (si quisiera anadir otro modulo, se acomplaria sin problema al sistema)
+                        Legibilidad (cada elemnto independeinte del otro, vive por si solo, separado)
+                        Resolucion rapida de problemas (Solucionar elementos muchos mas rapidos
+                        ,si secede un problema es facil identificar donde esta el problema)
+
+        Principios de un CLASE
+
+                        Modularidad
+                        Divide el programa en diferentes modulos o clases
+                        Separa clases en archivo
+
+
+PROYECTO UBER
+
+dividir el problema en modulos.
+
+1. Debemos tener un celular y nuestra necesidad es transsportarnos de un punto A a un punto B
+2. Solicitar un auto, e indicar un punto A y un punto BANCO
+3. Elegir el tipo de auto X, Pool, Black, Van. y tambien esta involucrado el CONDUCTOR
+4. Esperamos al auto, este se dirige hacia nosotros, lo tomamos y nos lleva del punto A al Punto B, 
+invollucra tambien el precio.
+
+                Analizar y Abstraer objetos
+                                -USER
+                                -Route
+                                -Uberx, Uberpool, Uberblack, Ubervan.
+                                -Driver
+                                -Pago Card, Paypal, Cash
+                                -Trip(viaje): captura quien esta ejecutando el viaje, hacia donde vas,
+                                el tipo de auto elegido y el tipo de pago.
+
+
+_________________
+| Nombre Clase   | Identidad. ej. Person
+|----------------|
+| Atributo 1     |
+| Atributo 2     | Estad0s, atributos, propiedades, caracteristicas ej. name
+| Atributo n     |
+|----------------|
+| Operaciones 1  |
+| Operaciones 2  | Comportamiento, funcionalidades  ej. walk()
+| Operaciones n  |
+|________________|
+
+Una ves definido la clase en condigo UML, lo pasaremos a codigo.
+
+
+User ---->> atributos: id, name, document, email, password.
+Direver --->> atributos: id, name, document, email, password.
+Route --->> id, start:[], end: []
+
+uberX -->> atributos: id, license, divers, passenger, brand, model.
+uberPool -->> atributos: id, license, divers, passenger, brand, model.
+uberBlack -->> atributos: id, license, divers, passenger, typeCarAccepted[], seatMaterial.[]
+uberVan -->> atributos: id, license, divers, passenger, typeCarAccepted[], seatMaterial.[]
+
+card --->> atributos: id, number, cvv, date.
+paypel --->> atributos: id, email.
+cash --->> atributos: id.
+
+========================================================================
+
+Sobre los atributos repetidos , ley del coddigo DRY
+
+Don't repeat yourself
+
+-Promueve la reduccion de la duplicacion del codigo
+-Toda pieza de informacion nunca deberia ser duplicada
+debido a 2u ela duplicaicone incrementa la dificultad en los cambios y evolucion.
+
+Para ello reutilizaremos codigo, median la Herencia, creando clases a partir de otra.
+Esto crea una estructura jerarquica de padre e hijos.
+
+Superclase(pader) y subclases(hijos)
+
+
+La clase hijo obtiene(Hereda) automaricamente los atributos y metodos de la clase padre y no es necesario
+escribir estos en ella.
+
+------------------------------------------------------------------
+Objetos es una instancia de la clase, es el resultado de lo que se modelo, parametros declarados en 
+la clase.
+
+Metodo constructor
+        -Dar un estado incial al objeto
+        -Tiene el mismo nobre de la clase
+        -Son los parametros minimos que necesita el objeto para que pueda vivir
+        
+variable = new NombreClase(), en python sin la palabra reservada new
+
+---------------------------------------------------
+Encapsulamiento (construir metodos con el mismo nombre pero con comportamiento diferente)
+ Hacer que unda permanez inviolable, inalterble, se le asigna un modificador de acceso
+ -public           Todas las Clases
+ -protected        Clases, paquetes y subclases
+ -default          Clases y Paquetes (es implicito cuando no se la agrega modificador a la variable)
+ -private          Clases
+________________________________________
+
+Polimorfirsmo
+clase forma             clase circulo           clase cuadrado
+dibujar()               dibujar()               dibujar()
+borrar()                borrar()                borrar()
+
+Pero la forma de dibujar va ser diferentes, el el compartir un metodo entre clases
+y que cada clase le de un comportamiento particular a ese metodo.

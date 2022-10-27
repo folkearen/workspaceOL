@@ -1,0 +1,35 @@
+.block-element{
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+}
+/* Por default el display es block, ocupa todo el espacio que tenga por delante independeiente de la longitud de su contenido, el 100% del width, permite agregar margin y padding en su cuatro lados*/
+
+span{
+    background-color: aqua;
+    margin-left: 12px
+}
+/* En cuanto al display inline ocupa el espacio del contenido y si queda espacioo por delante, lo ocupara el siguiente elemento. No puedo utilizar margin top y bottom, solo right y left, y tampoco se le puede dar un width y un hight */
+
+.nav {
+    background-color: peachpuff;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    /* margin: 10px 0;  */
+    margin-top: 34px;
+    margin-bottom: 33px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+}
+/* inline-block Junta las mejores caracteristicas de ambos display, ocupa solo el espacio del contenido, permitiendo compartir el espacio por delante con otros lementos, y ademas, permite los margin top y bottom, asi como tabien darles un width y un height */
+
+
+
+

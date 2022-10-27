@@ -1,0 +1,18 @@
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%; /* Setea el tamano por defecto del root en 10px (10 es el 62,5% de 16)
+    de esta forma es mas facil manejar el calculo  */
+}
+
+p {
+    font-size: 1.6rem;
+}/* rem toma como referencia las medidas del root de nuestro proyecto, o de la etiqueta html por defecto
+en este caso 16px, sin importar la relacion de tama;o que pueda existir entre etiquetas padres e hijos
+1.6 es igual a 16px con el seteo del root, 10 px es un rem, 1,3 rem son 13px, 0.3rem son 3 px
+*/
+
+main div p {
+    font-size: 6rem;
+    color: red;
+}

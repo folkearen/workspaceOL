@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    border: 0.3rem solid black;
+    display: flex;
+    justify-content:space-between;
+}
+/* Space-arround genera espacio alrrededos de los items, sin embargoa a las orillas suele ser menor, space-evenly genera espacios iguales tanto  la orillas como entre los items/ Space-btwens solo genera espacios iguales entre los items pero no en las orillas */
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+
+.box1{
+    background-color: navy;
+}
+.box2{
+    background-color: crimson;
+}
+.box3{
+    background-color: lightgreen;
+}
+.box4{
+    background-color: lightpink;
+}
+.box5{
+    background-color: papayawhip;
+}
+.box6{
+    background-color: lightcoral;
+}

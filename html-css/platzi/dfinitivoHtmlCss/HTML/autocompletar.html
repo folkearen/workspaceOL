@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">
+            <span>¿Cuál es tu nombre?</span><!-- atributo autocolmplete -->
+            <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+        </label>
+        <label for="email">
+            <span>¿Cuál es tu corre?</span>
+            <input type="email" name="email" id="email" autocomplete="email" required>
+        </label>
+        <label for="pais">
+            <span>¿En qué país vives?</span>
+            <input type="text" name="pais" id="pais" autocomplete="country" required>
+        </label>
+        <label for="CP">
+            <span>¿Cuál es tu codigo postal?</span>
+            <input type="number" name="CP" id="CP" autocomplete="postal-code" required>
+        </label>
+        <input type="submit">
+    </form>
+    <main>
+        <select name="cursos" id=""> <!-- Es una forma de hacerlo pero no la mejor practica -->
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standars">Web Standars</option>
+        </select>
+        <input list="cursos"> <!-- Permite escribir para buscar las opciones en vez de dar scroll -->
+        <datalist id="cursos">
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="Web Standars"></option>
+        </datalist>
+    </main>
+</body>
+</html>

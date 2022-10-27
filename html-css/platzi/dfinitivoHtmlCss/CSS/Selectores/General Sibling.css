@@ -1,0 +1,6 @@
+h2 ~ p {
+    color: red;
+}/* Selector hermano general, modifica todas las etiquetas, en este caso p
+que tenga como hermano general un etiqueta h2, en este caso da color rojo
+a todos lo p ya que son hermanos generales de h2, independiente
+del h3 intermedio que tambien es un hermano general*/

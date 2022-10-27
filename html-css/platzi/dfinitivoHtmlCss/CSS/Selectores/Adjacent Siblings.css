@@ -1,0 +1,6 @@
+h2 + p{
+    color: red;
+}/* el combinador + (hermano cerca o adyasebte "Adjacent Siblings") aplica el estilo a los elemntos cercanos 
+en este caso aplica el rojo a todas las etiquetas p que estan
+directamente debajo de un etiqueta h2, por eso la etiquet p debajo
+de h3 no se ve afectada ni la etiqueta p del inicio*/

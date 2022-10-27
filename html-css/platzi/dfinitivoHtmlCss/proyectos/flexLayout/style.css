@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: lightgray;
+    font-size: 1.6rem;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    height: 4rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .container-cards{
+     display: flex;
+     flex-wrap: wrap;
+     background-color: pink;
+     width: 20%;
+     align-items: center;
+ }
+
+ .card{
+     background-color: beige;
+     width: 20rem;
+     height: 8rem;
+     margin: 0.5rem;
+
+ }
+
+ .description-text{
+     
+     background-color: gray;
+     width: 80%;
+     font-size: 1.5rem;
+     font-weight: bold;
+ }
+
+ footer{
+     display: flex;
+     flex-wrap: wrap;
+     background-color: yellow;
+ }
+.empresa{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.redes img {
+    width: 15rem;
+    height: 5rem;
+}

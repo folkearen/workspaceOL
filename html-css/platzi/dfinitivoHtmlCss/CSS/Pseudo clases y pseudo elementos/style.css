@@ -1,0 +1,39 @@
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+    background-color: mediumseagreen;
+}
+.name-nav__item {
+    display: inline-block;
+}
+.name-nav__item a {
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: red;
+}
+.name-nav__item a:hover {
+    color: blue;
+}
+.name-nav__item a:active {
+    color: black;
+}
+
+.name-nav__item a::after { /* Afeter Despues del elemnto agregale este contenido */
+    content: " | ";
+}
+
+/* Pseudo clase
+:class defune el estilo de un estado especial de un elemnto */
+
+/* Pseudo elemento
+::element Define el estilo de una parte especifica de un elemnto cambiar o agregar un elemnto */
+ .list-item {
+/* Selector */
+    color:        red;
+/* propiedad */  /* Valor de la propiedad */
+
+ }
+ /* Todo junto es una declaración de estilo */

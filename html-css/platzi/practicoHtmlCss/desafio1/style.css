@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    background-image: url(./Assent/como_cortar_el_pelo_a_un_french_poodle_34437_paso_4_600.webp);
+    background-size: 5rem;
+    font-family: sans-serif;
+
+}
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+}
+.nav-bar{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    background-color: rgba(256,256,256,0.8);
+}
+.nav-bar .menu {
+    width: 3rem;
+    height: 3rem;
+}
+.nav-bar .profile-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;   
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container h1{
+   display: inline;
+   font-size: 12rem;
+}
+.name h1:nth-child(1) {
+    color: blue;
+}
+.name h1:nth-child(2) {
+    color: red;
+}
+.name h1:nth-child(3) {
+    color: yellow;
+}
+.name h1:nth-child(4) {
+    color: blue;
+}
+.name h1:nth-child(5) {
+    color: green;
+}
+.name h1:nth-child(6) {
+    color: red;
+}
+.busqueda {
+    width: 35%;
+    height: 4rem;
+    border:lightgrey 1px solid;
+    border-radius: 3rem;
+    margin: 3rem 0;
+    background-image: url(./Assent/3844432_magnifier_search_zoom_icon.png);
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 2rem 1rem;
+}
+.busqueda:focus{
+    outline: none;
+}
+.botones {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.boton {
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 3px;
+    border: 0;
+}
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+}
+footer p {
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+.empresa{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: start;
+}
+.configuracion-general {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: end;
+}

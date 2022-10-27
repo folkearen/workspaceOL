@@ -1,0 +1,95 @@
+Modulo de Python
+
+python3 -m venv venv <---(nombre por convencion)
+ls y deberia estar dentro una carpeta con nombre 'venv'
+
+source venv/bin/activate <----(Para activar el entorno virtual en linux y unix)
+(venv) <--- deberia aparecer en la linea de la consola
+
+deactivate <---- (desactiva el entorno virtual)
+
+Para activar rapidamente al entorno virtual se debe crear un alias
+para linux:
+
+        Ejecutar sudo nano ~/.bashrc
+        Ir al final del archivo
+        Agregar el comando: alias avenv='source venv/bin/activate'
+        Guardar presionando ctrl + o y luego salir con ctrl + x
+        Reejecutar la configuración de la terminal: source ~/.bashrc
+        Activar el entorno vitual avenv
+
+----------------------------------------------------------------------------
+Instalacion de PIP Package install Python
+
+Para instalar modulos que no viene predeterminado en Python
+
+Es recomendable instalar el modulo pip en el entrno virtual
+ sudo apt install python3-pip
+ pip install "Nombre del modulo, pandas por ejemplo"
+ pip freeze > requirements.txt (Guardar las dependencias, modulos que hemos isntalado)
+
+ pip install -r requirements.txt (instala las dempendencias guardads en el archivo)
+
+ Esot sirve para compartir proyectos y los modulos necesarios con otros programadores.
+
+
+*******************************************
+
+Manejo de errores
+
+SyntaxError (Python no corre el programa)
+                
+                
+Exception (Sucede en la linea especifica y se detendra, las lineas ateriores se ejecutara) 
+^                Keyboardinterrupt (crtl + c por error)
+|                KeyError
+|                IndexError
+|                FileNotFoundError
+|                ZeroDivisionError
+|                ImportError
+|
+hay mas de 50 
+
+Traceback (most recent call last):
+  File "/home/folkearen/workspace/python/platziPy/medioPY/prueba.py", line 1, in <module>
+    a = 1 / 0
+ZeroDivisionError: division by zero
+
+
+-------------------------------------------------------
+En  Python se manejh=an achivos de texto
+.txt
+.json (especial para el desarrollo web)
+.py
+.js
+.xml
+.js
+.csv
+
+modos de apertura de archivs
+r -> Lectura
+w -> Escritura (sobre escribir)
+a -> Escritura (Agrega al final del archivo la nueva informacion)
+
+abrir archivo
+
+with open("ruta del archivo 'path'", "modo de apertura") as f:
+
+
+with: un manejador contextual, controla el flujo del archivo, 
+si ciera el programao el script cierra inesperadamente,
+ no destuche el archivo.
+
+ open: funcion interna que abre un archivo, lleva dos parametros , la ruta
+ y el modo de apertura.
+
+ as: para dar un nombre
+
+ f: anombre hipotetico del archivo que estamos trabajando, 
+ cuando se trabaje con el archivo nos referiemos al el como 
+ f, la variable f... puede ser cualquier otro nombre.
+
+
+with open("ruta del archivo 'path'", "modo de apertura", encoding="utf8") as f:
+opcinal encoding="utf8" para que no haya caracteres extranos
+o con errores

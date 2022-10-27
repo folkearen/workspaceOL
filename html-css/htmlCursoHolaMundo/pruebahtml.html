@@ -1,0 +1,172 @@
+<!DOCTYPE html><!--Indica al navegador que el documento es un html 5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <style>
+        table {
+            width: 400px ;
+        }
+        table,th, td {
+            border: 1px solid blue ;
+        }
+    </style>
+  
+</head>
+<body>
+    <h1>Mi primera web</h1>
+    <p>Los titulos van de h1 a h6, en niveles.</p>
+    <hr><!--Genera una linea divisoria en la pantalla-->
+    <h3>Titulo de nivel 3</h3>
+    <p>
+        Es linea divisioria se genero con <br>
+        <span style="font-weight: bold; color: blue;"> etiqueta hr</span>, que solo es de apertura,
+        tambien quiero mostrar <br><br> <!--br Genera saltos de linea -->
+         los efectos de la etiqueta span.
+    </p><!--La etiqueta span sirve para referenciar texto dentro de otra
+    etiqueta-->
+    <a target="_blanck" href="http://www.google.cl">Ir a Google</a> <!--a sirve para navegar
+    mediante href"se le idica el vinculo" y el texo se convierte en
+enlace, con target="_blanck" abrira el enlace en otra pestana -->
+    <br>
+    <img src="Img/neon-city-man-with-guitar-wede4mt5873b5atf.jpg" alt="" width="200" height="200">
+<!--img no necesita etiqueta de cierre. en src puedo poner
+rutas locales o de intenet para las imagenes-->
+
+    <video src=""></video>
+
+    <form action="/formulario" method="post"> <!--Action es donde enviara la informacion
+    de todos lo campos dentro del formulario, el method es la forma, puede ser get o post-->
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="first name">
+        <br>
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" placeholder="first name">
+        <br>
+        <label for="radio">radio</label>
+        <input type="radio" id="radio" name="radio" placeholder="first name">
+        <br>
+        <label for="checkbox">checkbox</label>
+        <input type="checkbox" id="nombre" name="checkbox" placeholder="first name">
+        <br>
+        <label for="file">file</label>
+        <input type="file" id="file" name="file" placeholder="first name">
+        <br>
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" placeholder="first name">
+        <br>
+        <!-- 
+        type controla el comportamiento del imput, submit los tranform en boton
+        si coloco password se escribira el texto oculto asteriscos.
+        
+        email, esperara el ingreso y estructura de email, sino lanzarra error
+        
+        radio crea un circulo para seleccionar
+        checkbox, crea una cassilla de seleccion
+
+        file permite seleccionar archivos
+
+        En la pagina web si hago clic en el texto de label este se selecciona
+        para dar enfasis al campo input, y que este se active automaticamente
+        si cliqueo en nombre, para este caso, agrego una propiedad for
+        y luego al input correspondiete le asigno un id con el mismo nombre del for
+        de label
+        
+        en el caso de la propiedad name, se asigna como llave para el servidor
+        cuyo valor es el contenido del input, no olvidar nuca la propieda name
+        en los input.
+
+        Placeholder coloca un texto dentro del input como idicador dentro del input
+        -->
+        <label for="comentario">Deja tu comentario</label>
+        <br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese comentario"></textarea>
+        <!--Genera una caja de texto, cols y rows sirven para dar tamano
+    name es la llave para el servidor cuyo valor sera el contenido
+    las etiquetas va em linea si separo la de entrada con la de cierre
+    genera un relleno y el placeholder desaparce -->
+        <br>
+        <button type="button"><img src="/Img/unnamed.jpg" alt="" width="10px"> button</button>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+        <!--Un boton de type button es un simple boton y se le da una funcion JS
+            type reset, reseta a los valores por defecta los campos del formulario
+            type submit, sirve para enviar la info del fomulario a la ruta indicada en accion
+            y el metodo post o get
+
+            La ventaja de un etiqueta button por sobre un input submit
+            es que son mas personalizables, un ejemplo es que puedo 
+            colocarles imagenes.
+        -->
+    </form>
+    <select name="" id="">
+        <option value="">Male</option>
+        <option value="">Famale</option>
+    </select>
+    <ul> <!--Ul es lista no ordenada-->
+        <li>Elemnto 1</li> <!--List Item-->
+        <li>Elemnto 2</li>
+        <li>Elemnto 3</li>
+        <li>Elemnto 4</li>
+    </ul>
+    <ol> <!--ol es lista  ordenada-->
+        <li>Elemnto 1</li> <!--List Item-->
+        <li>Elemnto 2</li>
+        <li>Elemnto 3</li>
+        <li>Elemnto 4</li>
+    </ol>
+    <ol> <!--ol es lista  ordenada-->
+        <li value="50">Elemnto 1</li> <!--puedo indicar el valor
+        con el que comienza la lista-->
+        <li>Elemnto 2</li>
+        <li>Elemnto 3</li>
+        <li>Elemnto 4</li>
+        <li>
+            <ol> <!--Se pueden anidar tablas, y darle otro tipo de numeracio-->
+                <li style="list-style-type: lower-roman;">Sub elemnto 1</li>
+                <li style="list-style-type: lower-alpha;">Sub elemnto 2</li>
+                <li style="list-style-type: lower-alpha;">Sub elemnto 3</li>
+            </ol> <!--Truco, cuando aprieto contro estpacio aparacen
+            las opciones para una determinada propiedad
+        ej list-style-tipe: aqui apriento ctrl space y despliega las opciones ;-->
+        </li>
+    </ol>
+
+    <table ><!--propiedad para
+    darle bordes-->
+        <thead> <!--Etique que explicita el sector de cabecera
+        separa de manera logica cabecera del cuerpo-->
+            <tr><!--table rows = fila -->
+                <th>Producto</th> <!--th es cabecera, y centra el contenido-->
+                <th>Precio</th>
+                <th>descuento</th>
+            </tr>
+        </thead>   
+        <!--Cada td o th agregara nuevas columnas
+        se deben igualar para no tener filas sin cabecera-->
+        <tbody><!--Aparte de manera logica el cuerpo de la tabla
+        de su cabecera, esto sirvve para que algunos navefores
+    coloquen un scroll en la parte del tbody y asi se mejora
+la visualizacion de los datos-->
+            <tr>
+                <td>Bicileta</td><!-- TD Elemnto de celda y alinea a la izquierda el contenido-->
+                <td>1000</td>
+                <td>10%</td>
+            </tr>
+            <tr><!--Un nuevo tr es una nueva fila-->
+                <td>Paraguas</td><!-- TD Elemnto de celda-->
+                <td>567</td>
+                <td>70%</td>
+            </tr>
+        </tbody>
+        <tfoot><!--De haber scroll este no se afectaria-->
+            <td></td>
+            <td>Total: 1567</td>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>

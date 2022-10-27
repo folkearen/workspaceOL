@@ -1,0 +1,31 @@
+/* Position static es por defecto
+-static = se quedan donde tus las pones
+-absolute = Pierde su mposici[on dentro del contenedor padre y puedo ajustar su pocision en toda la pagina (bottom, top, left, right)
+-relative = Me permite hacer ajuste de posicionamiento y rompe los espacios designados por el padre (bottom, top, left, right)
+-fixed(bottom, top, left, right)
+-sticky (bottom, top, left, right)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    border: 2px black dotted;
+    display: inline-block;
+}
+
+.box{
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+#two{
+    background-color: green;
+    position: absolute;
+    
+     
+}

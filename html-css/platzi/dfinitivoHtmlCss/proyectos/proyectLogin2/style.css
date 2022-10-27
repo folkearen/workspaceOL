@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+.container{
+    background-image: url(./assent/consejos-ciberseguridad-contra-las-amenazas-de-la-red.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.identifcacion{    
+    display: block;
+    background-color: black;
+    color: white;
+    width: 11rem;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 0.8rem;
+    padding:1rem;
+    position: relative;
+    top: 8rem;
+    left: 82rem;
+    z-index: 99;
+    box-shadow: 0rem 0rem 0.5rem 0.2rem  white;
+}
+
+.identifcacion > img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.informacion > h2{
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+}
+
+.informacion{
+    display:block;
+    width: 35rem;
+    height: auto;
+    color: white;
+    background-color: black;
+    font-size: 1.8rem;
+    text-align: justify;
+    border-radius: 0.4rem;
+    padding: 4rem;
+    position: absolute;
+    top: 5rem;
+    left: 48rem;
+    box-shadow: 0rem 0rem 1rem inset  white;
+}
+
+.busqueda{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 50rem;
+    position: absolute;
+    top: 8rem;
+    left: 20rem;
+}
+label{
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+input{
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem 2.5rem 0.5rem;
+    min-width: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 1.5rem white;
+    background-color: navy;
+    color:greenyellow;
+}
+input.submit{
+    background-color: black;
+    color:lightcyan;
+    width: 5rem;
+    
+    position: relative;
+}
+
+input::placeholder{
+    background-color: black;
+    color: lightcyan;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+
+

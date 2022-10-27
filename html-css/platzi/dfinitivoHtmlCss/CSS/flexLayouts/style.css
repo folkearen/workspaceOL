@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* Space-arround genera espacio alrrededos de los items, sin embargoa a las orillas suele ser menor, space-evenly genera espacios iguales tanto  la orillas como entre los items/ Space-btwens solo genera espacios iguales entre los items pero no en las orillas */
+
+/* align-items baseline, ajusta la altura del item al espacio de su contenido, mientras que align-items stretch expandera el item al maximo de su contenedor. 
+Ambos caso siempre y cuando no se haya delimitado un height del intem */
+
+.box{
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1
+}
+/* flex-basis da un tamno width sin embargo este es flexible en cuanto a su contenid, si le sumamos fles-grow, al crecer la casa los items que no quepan se moveran a bajo ocupando 1 espacio, si baja un item ocupara el 100% del contenedor, si bajan dos 50 y 50, y asi repartiendose el espacio hasta que queden columna de un item bajo otro  */
+
+.box1{
+    background-color: navy;
+  /*   order: 4; */
+  /* flex-grow: 1; */
+}
+.box2{
+    background-color: crimson;
+   /*  order: 1; */
+   /* flex-grow: 1; */
+}
+/* Flex grow permite que dichos items ocupen el espacio sobrante del contenedor, o ocupar un cantidad de espacio mayor dentro del contendor, en desmedor del espacio de otros items */
+.box3{
+    background-color: lightgreen;
+    /* order: 5; */
+}
+.box4{
+    background-color: lightpink;
+   /*  order: 3; */
+}
+.box5{
+    /* order: 2; */
+    background-color: papayawhip;
+}
+.box6{
+    background-color: lightcoral;
+}
+/* order me permite ordenar los items segun predisponga siguiendo una secuencia numerica, si un item dentro del mimos contenedor no se le asigna un order, este se alineara a la izquierda y luego comenzara el ordenamiento de los items desginados con order */

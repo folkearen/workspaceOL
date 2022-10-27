@@ -1,0 +1,159 @@
+/*body{
+    background-color: rgba(123,134,134,0.3) /* Color rgb mas a de opacidad del color */
+
+/*}*/
+.color {
+    /*caracteristicass del borde
+    dotted,dashed,groove,ridge,inset,outset,none,hidden de groove a outse son 3d
+    */
+    color: #AAA;/*notacion hexaddecimal de tres caracteres,uno para cada color rojo verde azul*/
+    background-color: #00FAFA; /*notacion hexaddecimal de seis caracteres,dos para cada colorrojo verde azul*/
+    opacity: 0.2; /* Opacidad del elemento completo */
+    border-color: rgb(255, 0, 255);/* Nonmeclatura rgb */
+    border-style: double;
+    border-radius: 40px;
+    border-width: 20px;
+    
+}
+#titulo {
+    color: sandybrown;
+    height: 100px;
+    background-image: url(/Img/neon-city-man-with-guitar-wede4mt5873b5atf.jpg);
+    /* Fondo de imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+p.dos {
+    color: blue;
+}
+
+div p { /*Todos los hijos p ,directos o indirectos, de div*/
+    color: blueviolet;
+    margin-top: 54px;
+}
+
+div h2, div h3 {
+    color: gold;
+}
+
+.img1 {
+    width: 300px;
+    height: 100px;
+}
+.margen{
+    background-color: coral;
+    margin: 25px 50px 65px 20px; /* Espacio entre llos borde de ventana u otros elemntos */
+    padding: 20px 65px 50px 24px;/* Es un borde interior */
+    border: solid 5px cornflowerblue;/* Es un borde extrior */
+    width: 25%;
+    overflow: scroll; /* la propieda scroll permite crear barras
+    de desplzamiento cuando el contenido es mayor al tamano
+    de la caja contendero. La opcion visible muestra el cotenido
+    saliendose de la caja, y hidden lo oculta */  
+    outline: 5px dotted crimson;/* borde situado entre fuera del borde pero antes del margim*/
+}
+.textmodif {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/* Intenta cagar el primer tipo, si no puede ira pasando al siguiente */
+    text-align: center;/* Por defecto left, puedo agregar right y justify */
+    text-decoration: overline;
+    text-shadow: 3px 5px 4px cadetblue; /* Sombre, izquierda abajo difuminado color */
+}
+
+/* Se debe respetar el siguiente orden para la modificaciones en lso link */
+a:link { /* Para cuando el link no ha sido visitado */
+    color: blueviolet;
+}
+a:visited {/* Para cuadno link haya sido visitado */
+    color: green;
+}
+a:hover { /* Para cuando paso el mouse por encima */
+    color: orange;
+}
+a:active {/* Para cuando estoy pinchando el link */
+    color: aqua;
+}
+
+ul {
+    background-color: papayawhip;
+    list-style-type: none; /* Da vinetas a los items, none los elimina */
+    padding-left: 0; /* Orilla el contenido */
+}
+ol {
+    width: 25%;
+    list-style: lower-greek;
+    list-style-position: inside;/* Permite que solo
+    la vineta este dentro del espacion del texto */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: solid 1px firebrick;
+    padding: 5px;
+}
+th {
+    background-color: crimson;
+    color: white;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: lightcyan;
+    ;
+}
+tr:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+span {
+    display: block; /* El display de span es in line
+    ocupa el espacio del valor que tenga dentro, al cambiarlo
+    a block ocupara de margen a marge al lo ancho 
+    display: none; ocultara la informacion, los mismo que visibility:hidden;
+    */
+    background-color: red;
+    max-width: 900px;/* Representa el ancho maximo
+    si la pantalla se achica este ancho maximo se ira adaptando
+    si se agranda quedara en la medida indicada */
+}
+
+div {
+    display: inline;/* Por defecto  es display in block
+    ocupando de marge a marge, si la cambio a in line ocupara
+    solo el tama;an de su contenido */
+}
+#position {
+    position: sticky; 
+    /* 
+    sticky permite dejar pegado el elemento en su posicion determinada
+    de la pantalla segun el hmtl, se le puede dar posicionamiento
+    y se respetara a meidada que vaya avanzamdo, desde el punto riginal
+
+    Fixed deja pegado el elemnto y pasa por sobre los etros elemntos al hacer scroll
+    tambien s ele puede indicar la posicion, pero este se pega
+    al inicio de la pagina
+
+    relative me permite indicar medidas par
+    la posicion exacta */
+    left: 330px;
+    top: 25px;
+    background-color: black;
+    color: white;
+    
+
+    /* Static viene por defecto */
+}
+.left{
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+.center {
+    padding: 50px 0;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+}

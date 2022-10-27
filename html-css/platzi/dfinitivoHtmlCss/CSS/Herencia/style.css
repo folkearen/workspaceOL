@@ -1,0 +1,11 @@
+html {
+    font-size: 75%; /* De los 16px que tiene por defecto */
+    /* no afecta al h1 porque tiene estilo propio */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: inherit; /* inherit Hereda del padre mas cercano con la caracteristica
+    a modificar, ni main ni body tiene tamano de letra
+    el mas cercano es html */
+}

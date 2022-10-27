@@ -1,0 +1,11 @@
+div > p {
+    color: red;
+}/* Etiqueta p hija directo de div*/
+
+div article{
+    color: aqua;
+} /* Estilo descendiente, en este caso afecta todos los article que esten dentro de div
+considerando el div mas amplio del html
+
+si pusieroamos div p todos lo p estar[ian en rojo incluyendo los que esten dentro de article*
+*/
