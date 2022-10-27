@@ -1,0 +1,102 @@
+*{  box-sizing: border-box;
+
+    font-size: 62.5%; /* Setea el tamano por defecto del root en 10px (10 es el 62,5% de 16)
+    de esta forma es mas facil manejar el calculo  */
+}
+body {
+    background-color: rgb(241, 255, 98);
+}
+.logo {
+    margin-bottom: 1.2rem;
+}
+nav a {
+    display:block;
+    font-size: 1.6rem;
+}
+.line {
+    border: solid 0.1rem white ;
+    margin: 1.2rem 0 1.6rem 0;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
+.presentacion-container {
+    border: solid 0.2rem white;
+    border-radius: 1rem;
+    background-image: url("./lemon-pie 2@2x.png");
+    height: 40rem;
+    width: 40%;
+    background-size: cover; 
+    font-size: 4rem;
+    font-weight: 400;
+    color: rgb(0,0,0);
+    text-align: justify;
+}
+.presentacion-container h1 {
+    background-color: rgb(255,255,255,.6);
+    font-size: 4rem;
+    font-weight: 700;  
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 0;
+}
+.presentacion-container p {
+    margin-top: 0;
+    background-color: rgb(255,255,255,.6);
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 7rem;  
+} 
+.ingredente-container {
+    font-size: 3.4rem; 
+    background-color: rgb(255,255,255,.4);  
+    border-radius: 3rem 0 3rem 0;
+    margin-left: 3rem;
+    padding: 2rem;
+    color: orangered;
+    width: 20%;
+    border: solid 0.15rem white;
+    
+}
+.ingredente-container ul {
+    list-style: none;
+    font-size: 3rem;
+    margin-top: 0.4rem;
+    
+}
+.ingredente-container p {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.preparacion-container {
+    font-size: 3.4rem; 
+    background-color: rgb(255,255,255,.4);  
+    border-radius: 3rem 0 3rem 0;
+    margin-left: 3rem;
+    padding: 2rem;
+    color: green;
+    width: 40%;
+    text-align: justify;
+    border: solid 0.15rem white;
+}
+.preparacion-container ol {
+    font-size: 3rem;
+    margin-top: 0.4rem;
+}
+
+.preparacion-container li {
+    margin-bottom: 0.8rem;
+}
+.preparacion-container ol li a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+a:hover {
+    color: palevioletred
+}
+footer {
+    text-align: center;
+    font-size: 3rem;
+}
