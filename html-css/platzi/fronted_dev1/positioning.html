@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            background: peachpuff;
+            position: relative;
+            top: 20px;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;/*le indica solo moverse dentro
+            del container*/
+            right: 0;/*no s e mueve la extremo derecho de la pagina
+            sino al extremo derecho dentro del espacio del contriner*/
+        }
+        .item2 {
+            width: 50px;
+            height: 50px;
+            background: yellow;
+            position: inherit;
+            right: 0;
+
+        }
+        nav {
+            width: 100%; /*maneja un % del espacio en pagina*/
+            height: 60px;
+            background: cyan;
+            position: fixed;/*Fija el elemento en la pantala
+            si se hace scroll pasar[a por de lante de las
+            otras cosa. Como las barrars de navegacion de las
+            paginas*/
+        }
+        ul p {
+            position: sticky; /*va pegando un elemnto en
+            la parte superior, necesita de mas hermanos para
+            saber a que elemento le dara permiso\
+            static es por defecto, inicial es un consideracion inical para volver
+            e inherital ereda el posicionamiento padre
+            */
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>,<!--navbar o barra de navegacion
+    procurar mantener el roden de las eqiequetas
+tal cual seria el orden en la aplicacion web-->
+    <div class="container">
+        <div class="item">
+            <div class="item2"></div>
+        </div>
+    </div>
+    
+
+    <ul>
+        <p>Furtas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>sandia</li>
+    </ul>
+    <ul>
+        <p>Animales</p>
+        <li>Perro</li>
+        <li>Gato</li>
+        <li>Raton</li>
+    </ul>
+    <ul>
+        <p>vajilla</p>
+        <li>Taza</li>
+        <li>plato</li>
+        <li>ensaladera</li>
+    </ul>
+    <ul>
+        <p>Furtas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>sandia</li>
+    </ul>
+    <ul>
+        <p>Animales</p>
+        <li>Perro</li>
+        <li>Gato</li>
+        <li>Raton</li>
+    </ul>
+    <ul>
+        <p>vajilla</p>
+        <li>Taza</li>
+        <li>plato</li>
+        <li>ensaladera</li>
+    </ul>
+    <ul>
+        <p>Furtas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>sandia</li>
+    </ul>
+    <ul>
+        <p>Animales</p>
+        <li>Perro</li>
+        <li>Gato</li>
+        <li>Raton</li>
+    </ul>
+    <ul>
+        <p>vajilla</p>
+        <li>Taza</li>
+        <li>plato</li>
+        <li>ensaladera</li>
+    </ul>
+    <ul>
+        <p>Furtas</p>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>sandia</li>
+    </ul>
+    <ul>
+        <p>Animales</p>
+        <li>Perro</li>
+        <li>Gato</li>
+        <li>Raton</li>
+    </ul>
+    <ul>
+        <p>vajilla</p>
+        <li>Taza</li>
+        <li>plato</li>
+        <li>ensaladera</li>
+    </ul>
+
+    <!-- Exsiten diferentes tipos de posicionamientos
+    relative,absolute, fixed,sticky, static, initial, inherital-->
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+        }
+        .one {
+            z-index: 2;
+            background: red;
+        }
+        .two {
+            z-index: 1;
+            background: blue;
+        } /* a pesar de que one este estructurado primero que two en hml, hemos asignado
+        indices en el eje z  en css permitiendo que one se sobreponga a two*/
+    </style>
+</head>
+<body>
+    <div class="one">Hola</div>
+    <div class="two">Mundo</div>
+
+
+
+    <!--El eje z es entre el usuario y la pnatalla, es el eje de superposicion de los elementos-->
+</body>
+</html>

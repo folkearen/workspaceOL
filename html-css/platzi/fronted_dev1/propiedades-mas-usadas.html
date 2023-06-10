@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,S, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            width: 300px;
+            height: 300px;
+            background: violet;
+            border-radius: 300px; /*Redonde los bordes, si aumenta lo suficiente
+            puedo formar un circulo*/
+            overflow: hidden; /*Esconde todo lo que4 se salga*/
+        }
+        .card img {
+            width: 100%; /*adapta la imagen al tamano de car
+            como una etiqueta esta dentro de la otra en html
+            esto tambien se replica en su contenid*/
+            height: 50%;
+        }
+        .card p {
+            text-align: center;
+        }
+        .card p:nth-child(3) {
+            color: blue;
+            font-family: 'Georgia';
+            font-weight: bolder;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2022/01/23/13/04/sparrow-6960807__340.jpg" alt="">
+            <p>Chimuelo</p>
+            <p>loco</p>
+        </div>
+    </section>
+</body>
+</html>

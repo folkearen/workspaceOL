@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p { /*selector decendiente todos las etiquetas dentro de la etiqueta mayor, todos los p dentro del div*/
+            color: lightsalmon;
+        }
+        div > div {/*selector hijo directo se especifica a la eiqueta dentro del la etiqueta padre, en este caso div hijo del div padre*/
+            background: lightskyblue;
+        }
+
+        div + section { /*selector adyacente afecta al que sige de la etiqueta, en este caso div le sige sectiom*/
+            background: plum;
+        }
+        .mast {
+            color: white; 
+            background: black;
+        }
+
+        div ~ p {
+            color: lime;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Platzi</p>
+        <div>es</div>
+    </div>
+    <div class="mast">
+        El mejor
+    </div>
+    <section>
+        de los mejores
+    </section>
+
+    <div> 
+        <p>Cursos</p> 
+        <p>Platzi</p>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex; /*Solo se aplica a etiquetas padre
+            (que contenga otras etiquetas dentro un item
+            padre tambien puede llevar el tipo display flex)
+            y al colocar flex tiene todas las propiedades
+            de ese tipo de display*/
+            background: papayawhip;
+            justify-content: center; /*cemtra verticalemnte*/
+            align-items: center; /*Alinea los objetos al centro horizontalmente*/
+            height: 500px;
+            flex-direction: column;
+        }
+        .item {
+            width: 60px;
+            height: 60px;
+            background: blueviolet;         
+        }
+        .container .item:nth-child(2n + 1) {
+            background: cyan;
+        }
+        .container .item:nth-child(3) {
+            display: flex;
+            background: chocolate;
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        .item2 {
+            background: crimson;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">
+            <div class="item2"></div>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+
+    </div>
+</body>
+</html>
